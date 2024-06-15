@@ -1,3 +1,5 @@
+ 
+
 import React, { useState } from 'react';
 
 const TodoItem = ({ todo, updateTodo, deleteTodo }) => {
@@ -10,7 +12,7 @@ const TodoItem = ({ todo, updateTodo, deleteTodo }) => {
   };
 
   const handleSave = () => {
-    updateTodo(todo.id, { title, category, completed: todo.completed });
+    updateTodo({ title, category, completed: todo.completed });
     setEditing(false);
   };
 

@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from 'react';
 import { Container, TextField, Button, Typography, Box } from '@mui/material';
 
@@ -7,7 +10,7 @@ const TodoForm = ({ addTodo }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(title, category);
+    addTodo(title, category); 
     setTitle('');
     setCategory('');
   };
